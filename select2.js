@@ -852,7 +852,7 @@
 
         createContainer: function () {
             return $("<div></div>", {
-                "class": "select2-container",
+                "class": "select2-container" + (this.opts.className ? (" " + this.opts.className) : ''),
                 "style": "width: " + this.getContainerWidth()
             }).html([
                 "    <a href='javascript:void(0)' class='select2-choice'>",
@@ -1104,7 +1104,7 @@
 
         createContainer: function () {
             return $("<div></div>", {
-                "class": "select2-container select2-container-multi",
+                "class": "select2-container select2-container-multi" + (this.opts.className ? (" " + this.opts.className) : ''),
                 "style": "width: " + this.getContainerWidth()
             }).html([
                 "    <ul class='select2-choices'>",
