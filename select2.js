@@ -852,7 +852,7 @@
 
         createContainer: function () {
             return $("<div></div>", {
-                "class": "w-select select2-container" + (this.opts.showSearch ? "" : " select2-hideSearch"),
+                "class": "w-select select2-container",
                 "style": "width: " + this.getContainerWidth()
             }).html([
                 "    <a href='javascript:void(0)' class='select2-choice selected'>",
