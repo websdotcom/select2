@@ -852,12 +852,12 @@
 
         createContainer: function () {
             return $("<div></div>", {
-                "class": "select2-container",
+                "class": "w-select select2-container",
                 "style": "width: " + this.getContainerWidth()
             }).html([
-                "    <a href='javascript:void(0)' class='select2-choice'>",
-                "   <span></span><abbr class='select2-search-choice-close' style='display:none;'></abbr>",
-                "   <div><b></b></div>" ,
+                "    <a href='javascript:void(0)' class='select2-choice selected'>",
+                "   <span class='choice'></span><abbr class='select2-search-choice-close' style='display:none;'></abbr>",
+                "   <div class='handle'></div>" ,
                 "</a>",
                 "    <div class='select2-drop' style='display:none;'>" ,
                 "   <div class='select2-search'>" ,
